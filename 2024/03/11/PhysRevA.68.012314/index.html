@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="I. INTRODUCTION  purity for Gaussian states of single-mode continuous variable systems, purity of single-mode Gaussian states">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PhysRevA.68.012314">
+<meta property="og:url" content="http://example.com/2024/03/11/PhysRevA.68.012314/index.html">
+<meta property="og:site_name" content="Welcome to PhYsiX Space">
+<meta property="og:description" content="I. INTRODUCTION  purity for Gaussian states of single-mode continuous variable systems, purity of single-mode Gaussian states">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-03-11T06:06:51.000Z">
+<meta property="article:modified_time" content="2024-03-11T06:20:56.186Z">
+<meta property="article:author" content="PhYsiX2020">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2024/03/11/PhysRevA.68.012314/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>PhysRevA.68.012314 | Welcome to PhYsiX Space</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Welcome to PhYsiX Space</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Try to set up a place to store notes</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/11/PhysRevA.68.012314/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="PhYsiX2020">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Welcome to PhYsiX Space">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          PhysRevA.68.012314
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-03-11 01:06:51 / 修改时间：01:20:56" itemprop="dateCreated datePublished" datetime="2024-03-11T01:06:51-05:00">2024-03-11</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">note</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><strong>I. INTRODUCTION</strong></p>
+<ul>
+<li><p>purity for Gaussian states of single-mode continuous variable
+systems, purity of single-mode Gaussian states</p>
+<span id="more"></span>
+<ul>
+<li>obvious difficulty: pure states are unavoidably corrupted by
+interaction with the environment</li>
+<li>pure Gaussian states of continuous variable (CV) systems: coherent
+and squeezed-coherent states</li>
+</ul>
+<p>CV Gaussian states that are available for experiments are usually
+mixed states, and it becomes crucial to establish their degree of purity
+or mixedness determined by the environmental noise</p></li>
+<li><p><span class="math inline">\(\mu=\text{Tr}[\rho^2]\)</span></p>
+<ul>
+<li><p>range <span class="math inline">\(\frac{1}{d}\)</span> for a
+completely mixed state, 1 for a pure state</p>
+<p>CV systems, i.e., infinite dimensional Hilbert spaces</p></li>
+</ul></li>
+<li><p><span class="math inline">\(\mu\)</span> is a nonlinear function
+of the density matrix, it cannot be connected to an observable quantity
+if we perform repeated measurements on single copies of the state.
+(cannot be the expectation value of a single-system self-adjoint
+operator, nor can it be related to a single-system probability
+distribution obtained from a POVM)
+纯度是密度矩阵的非线性函数，不能通过量子态的单一复制的重复测量联系到可观测量（不能是单系统自伴算子的期望值，也不能联系到从POVM获得的单系统概率分布）</p></li>
+</ul>
+<p>if collective measurements on two copies of the state are possible,
+then the purity may be measured directly
+量子态的两个复制的联合测量是可以直接测量纯度的</p>
+<ul>
+<li><p>quantum tomography: statistics is usually poor, since the
+measurement of a whole quorum of observables is needed, unavoidably
+leading to large fluctuations</p>
+<p>Gaussian states are uniquely defined by their first two statistical
+moments, which can be measured by the joint detection of two conjugate
+quadratures,
+高斯态由前两个统计矩唯一确定，可以由两个共轭量的联合测量确定</p></li>
+<li><p>We will show that the measurement of the Q function is the
+optimal minimal measurement for the purity, in the sense that it is
+necessary and sufficient to determine <span
+class="math inline">\(\mu\)</span> and requires the minimum number of
+observables to be measured.</p></li>
+<li><p>single-mode radiation field, single atom: for these systems, the
+class of Gaussian states includes almost all the states that can be
+reliably produced</p></li>
+<li><p>the time evolution of the purity of an initial Gaussian state in
+a noisy channel can be uniquely expressed as a function of the initial
+observable parameters of the input state and of the asymptotic
+observable parameters of the environment</p></li>
+</ul>
+<p><strong>II. PURITY OF GAUSSIAN STATES</strong></p>
+<ul>
+<li><p>Wigner representation of an arbitrary operator O</p>
+<p>The Wigner representation <span
+class="math inline">\(W(\alpha)\)</span> of the density matrix <span
+class="math inline">\(\rho\)</span> of a quantum state is referred to as
+the Wigner function of the state. Gaussian Wigner function</p></li>
+<li><p>parametrization of Gaussian states，applying the phase space
+representation of squeezing</p></li>
+</ul>
+<p><span class="math display">\[
+\mu=\frac{1}{2\sqrt{\text{Det}[\sigma]}}
+\]</span></p>
+<p><span class="math display">\[
+\mu=\frac{1}{2 \bar n+1}
+\]</span></p>
+<ul>
+<li><p>the purity of a generic Gaussian state depends only on the
+average number of thermal photons, as one should expect, since
+displacement and squeezing are unitary operations.
+一个普遍的高斯态的纯度只依赖于平均热光子数，就像我们期待的那样，因为平移和压缩是幺正操作
+Therefore, the measurement of the purity of a Gaussian state is
+equivalent to the measurement of its average number of thermal photons.
+所以测量一个高斯态的纯度就相当于测量它的平均热光子数</p>
+<p>antinormally ordered expression</p></li>
+<li><p>Gaussian states may be effectively characterized as well by
+single-quadrature measurements obtained by balanced homodyne detection.
+Thus, a question arises whether or not one really needs to resort to
+joint measurement of two conjugate quadratures to determine the
+purity</p></li>
+<li><p>In the deep quantum regime, i.e., for small <span
+class="math inline">\(\bar n\)</span>, fluctuations of <span
+class="math inline">\(\mu\)</span> become more relevant. This is not
+surprising, since m is a highly nonlinear function of the second-order
+moments.</p></li>
+</ul>
+<p><strong>IV. EVOLUTION OF PURITY IN A NOISY CHANNEL</strong></p>
+<ul>
+<li><p>Let us consider the time evolution of an initial, pure or mixed,
+generic single-mode Gaussian state in the presence of noise and damping
+(and/or pumping) toward a final squeezed thermal state.</p>
+<p>M is the correlation function of the bath (which is usually referred
+to as the squeezing of the bath）</p></li>
+<li><p>First moments are damped through the noisy channel: this effect
+should be expected since it is the mathematical evidence of the
+absorption of the state’s coherent photons.</p></li>
+<li><p>the initial Gaussian state for which purity is best preserved in
+time must have a squeezing parameter <span
+class="math inline">\(r_0=r_{\infty}\)</span> and a squeezing angle,
+<span class="math inline">\(\phi_0=\phi_{\infty}+\pi/2\)</span> i.e., it
+must be antisqueezed (orthogonally squeezed) with respect to the
+bath)</p>
+<p>The net effect for the evolution of the purity is that the two
+orthogonal squeezings of the initial state and the bath cancel each
+other exactly, thus reproducing the optimal purity evolution of an
+initial nonsqueezed coherent state in a nonsqueezed thermal
+bath.</p></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2024/01/29/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" rel="prev" title="一些常用命令">
+      <i class="fa fa-chevron-left"></i> 一些常用命令
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">PhYsiX2020</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">PhYsiX2020</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div><script color="0,0,255" opacity="0.5" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
