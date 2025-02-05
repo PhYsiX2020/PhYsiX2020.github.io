@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en,zh-CN,default">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="English Version 回到索引  Teleportation by a Majorana Medium Revisit the non-locality of Majorana zero modes and teleportation: Bogoliubov-de Gennes equation based treatment Electron Teleportation">
+<meta property="og:type" content="article">
+<meta property="og:title" content="马约拉纳隐形传态">
+<meta property="og:url" content="http://example.com/my-article/Majorana%20teleportation%20cn/index.html">
+<meta property="og:site_name" content="Welcome to PhYsiX Space">
+<meta property="og:description" content="English Version 回到索引  Teleportation by a Majorana Medium Revisit the non-locality of Majorana zero modes and teleportation: Bogoliubov-de Gennes equation based treatment Electron Teleportation">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-01-26T06:00:00.000Z">
+<meta property="article:modified_time" content="2025-01-27T08:18:36.000Z">
+<meta property="article:author" content="PhYsiX2020">
+<meta property="article:tag" content="cn">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/my-article/Majorana%20teleportation%20cn/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>马约拉纳隐形传态 | Welcome to PhYsiX Space</title><meta name="robots" content="noindex">
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Welcome to PhYsiX Space</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Try to set up a place to store notes</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/my-article/Majorana%20teleportation%20cn/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="PhYsiX2020">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Welcome to PhYsiX Space">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          马约拉纳隐形传态
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2025-01-26 00:00:00" itemprop="dateCreated datePublished" datetime="2025-01-26T00:00:00-06:00">2025-01-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2025-01-27 02:18:36" itemprop="dateModified" datetime="2025-01-27T02:18:36-06:00">2025-01-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/discussion/" itemprop="url" rel="index"><span itemprop="name">discussion</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><a href="/my-article/Majorana%20teleportation%20en/">English
+Version</a> <a href="/my-article/Index0">回到索引</a></p>
+<h3 id="section"></h3>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/cond-mat/0601261">Teleportation by a
+Majorana Medium</a></p>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/1910.13748">Revisit the non-locality
+of Majorana zero modes and teleportation: Bogoliubov-de Gennes equation
+based treatment</a></p>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/0909.5172">Electron Teleportation via
+Majorana Bound States in a Mesoscopic Superconductor</a></p>
+<p><a target="_blank" rel="noopener" href="https://arxiv.org/pdf/cond-mat/0009452">Andreev-Tunneling,
+Coulomb Blockade, and Resonant Transport of Non-Local Spin-Entangled
+Electrons</a></p>
+<h3 id="section-1"></h3>
+<blockquote>
+<p>此类文章指出了一个巨大的效应：在纳米线两端真实地隐形传态电子。但是据我所知，目前还没有体现majorana非局域性的实验证据？</p>
+</blockquote>
+<div style="width:80%; margin:0 auto;">
+<p>你提到的确是当前量子物理领域中的一个重要争议：尽管理论上关于Majorana零模的非局域性及其在量子传态中的作用已经非常成熟，但实际实验却尚未能确凿地证明这种非局域性。Majorana零模理论预测了一种特殊的非局域量子态：在纳米线的两端存在能量接近零的Majorana零模。当一个电子被注入到一端时，其量子态会以某种“分裂”的方式表现，同时出现在另一端（以守恒费米子数的方式）。尽管理论研究已经十分详尽，实验却遇到了以下挑战：</p>
+<p>Majorana零模的候选实验平台</p>
+<ul>
+<li><strong>半导体-超导体异质结纳米线</strong>：例如，InSb或InAs纳米线与s波超导体的结合（e.g.
+Al）。</li>
+<li><strong>磁性原子链</strong>：如在超导体表面沉积自旋调控的磁性原子。</li>
+<li><strong>二维拓扑绝缘体与超导体界面</strong>：例如量子自旋霍尔边缘态。</li>
+</ul>
+<p>这些平台的设计初衷就是为了在实验中实现理论预测的Majorana零模。通常通过<strong>s波超导体</strong>与强自旋轨道耦合材料的<strong>近邻效应</strong>引入超导性。超导配对与自旋轨道耦合和磁场的协同作用可产生拓扑超导态，从而在纳米线或边界处支持马约拉纳零模。然而，<strong>实验观察到的信号多为间接证据</strong>，例如：</p>
+<ul>
+<li>量子点或隧道器件中出现接近零偏压的导电峰（“零偏压导电峰”）。</li>
+<li>在某些条件下观测到量子相干振荡或拓扑能隙。</li>
+</ul>
+<p>为了解决这一问题，可能需要：</p>
+<ul>
+<li><strong>多端测量与非局域性测试</strong>：引入多端探针（例如T形结构），通过干涉和非局域相关性来验证Majorana的波函数是否分布在纳米线两端。</li>
+<li><strong>探测非阿贝尔性（Non-Abelian
+Statistics）</strong>：通过对Majorana态的编织（braiding）操作，验证其统计行为是否符合理论预测。</li>
+<li><strong>拓扑不变量的实验提取</strong>：设计实验直接测量Majorana态的拓扑保护特征，例如拓扑缠绕数。</li>
+</ul>
+</div>
+<h3 id="section-2"></h3>
+<blockquote>
+<p>那么且不说majorana的非局域性，超导纳米线这种被预言并且实现Kitaev模型的系统，目前实验上确凿地证明和操控了吗</p>
+</blockquote>
+<div style="width:80%; margin:0 auto;">
+<p>超导纳米线系统被认为是Kitaev链模型的实验实现，其核心条件包括：纳米线的强自旋-轨道耦合。超导体的邻近效应。外加磁场打开的拓扑能隙。即使取得了上述进展，仍有一些关键问题需要解决，例如<strong>区分Majorana态与Andreev束缚态</strong>。
+超导纳米线系统已经取得了一些支持Kitaev模型的实验证据，但这些证据并不完全确凿。现阶段的主要障碍在于区分Majorana态与非拓扑效应，以及如何稳定和精确地操控Majorana态。</p>
+<p>Andreev束缚态的多样性：
+Andreev束缚态的形成可以来源于不同的物理机制，例如界面不平整、电势波动或材料缺陷。它们的物理表现与Majorana模式高度相似，因此难以通过简单的理论模型排除。实验系统通常是有限尺寸的（例如有限长的纳米线），这使得Majorana模式的非局域性特性变得不明显，而与Andreev束缚态的局域性更加接近。<strong>迄今为止，尚无明确的实验直接证明这种非局域性</strong>。然而，越来越多的研究正在接近这一目标，特别是在高质量纳米线和量子点系统中。</p>
+</div>
+<h3 id="section-3"></h3>
+<blockquote>
+<p>我不太明白，外加磁场本来就是破坏电子自旋简并的，SOC又破坏自旋简并。到底是怎么回事呢</p>
+</blockquote>
+<div style="width:80%; margin:0 auto;">
+<p>这是一个非常好的问题，涉及到<strong>外加磁场</strong>和<strong>自旋轨道耦合（SOC）</strong>在实现拓扑超导体和马约拉纳零模时各自的作用。这两者的作用看似都在破坏自旋简并，但它们的机理和效果并不完全一样。在SOC和外加磁场共同作用下，它们会产生一个互补的效应，使系统具备拓扑性质：</p>
+<p><strong>SOC创建了动量依赖的有效磁场</strong></p>
+<p>SOC在电子的运动中引入了一个等效的自旋依赖磁场（有效磁场），方向与电子动量相关。这个有效磁场不需要实际施加磁场，而是动量与晶格自旋耦合作用的结果。例如，在Rashba
+SOC中：<span class="math inline">\({B}_{eff} \propto \mathbf{k} \times
+\hat{z},\)</span>
+这个有效磁场使得电子的动量决定了其自旋方向，引入自旋-动量锁定特性，破坏电子的自旋简并。这是系统具备拓扑超导态的重要前提。</p>
+<p><strong>外加磁场补充了Zeeman分裂</strong></p>
+<p>在SOC创建的有效磁场基础上，外加磁场的Zeeman效应进一步破坏了剩余的对称性，使系统具备了拓扑相转变所需的条件：没有外加磁场时，SOC只提供了动量相关的有效磁场，但系统仍然是时间反演对称的（TRS对称性未破坏）。外加磁场破坏了时间反演对称性（TRS对称性），并打开了拓扑能隙，允许系统从普通超导态过渡到拓扑超导态。例如，在一维纳米线中，SOC创建了一个带有自旋分裂的能带，而外加磁场使能带进一步分裂，最终导致拓扑超导态的形成。</p>
+</div>
+<h3 id="section-4"></h3>
+<blockquote>
+<p>帮我回想SOC的本质。在原子物理课程中学过，电子的轨道角动量与自旋角动量的耦合。可是我忘记了为什么它们会耦合</p>
+</blockquote>
+<div style="width:80%; margin:0 auto;">
+<p>自旋轨道耦合的根本原因在于相对论效应。电子围绕原子核运动时，由于电子质量小、速度高，相对论效应会导致电子的运动显现出以下特性：<strong>电子感受到的核电场变为“运动的磁场”</strong>：</p>
+<ul>
+<li>在原子的参考系中，电子围绕静止的原子核运动，感受到核电场 <span
+class="math inline">\(\mathbf{E}\)</span>。</li>
+<li>但在电子的自身参考系中，核电场会因电子运动被洛伦兹变换为一个等效磁场
+<span class="math inline">\(\mathbf{B}_{\text{eff}}\)</span>： <span
+class="math inline">\(\mathbf{B}_{\text{eff}} \propto \mathbf{v} \times
+\mathbf{E},\)</span>
+这个等效磁场与电子的运动方向有关，因而会与电子的轨道角动量相关。</li>
+</ul>
+<p>电子的自旋角动量产生了一个内在的磁矩，与 <span
+class="math inline">\(\mathbf{B}_{\text{eff}}\)</span>
+耦合。这个耦合是磁偶极矩与磁场的相互作用，能量形式为： <span
+class="math inline">\(H_{\text{SOC}} \propto \mathbf{S} \cdot
+\mathbf{B}_{\text{eff}}\)</span>
+。等效磁场本质上由电子的轨道运动产生，因此可以用轨道角动量 <span
+class="math inline">\(\mathbf{L}\)</span>
+来描述。因此，自旋轨道耦合最终表现为<span
+class="math inline">\(\mathbf{S}\)</span> 和<span
+class="math inline">\(\mathbf{L}\)</span> 的耦合： <span
+class="math inline">\(H_{\text{SOC}} = \lambda \mathbf{L} \cdot
+\mathbf{S}\)</span>, 其中 <span class="math inline">\(\lambda\)</span>
+是自旋轨道耦合强度。</p>
+<p>在固体晶格中，SOC的物理来源可以从原子物理的SOC延伸到晶格对电子运动的影响：电子在固体中的运动同样感受到由离子核和晶格势场产生的电场。这种电场经过洛伦兹变换，也会形成一个动量相关的有效磁场。</p>
+</div>
+<h3 id="section-5"></h3>
+<blockquote>
+<p>说起来，这种反复反射为什么会发生。和电子进入超导体后Cooper对的无耗散有关吗</p>
+</blockquote>
+<div style="width:80%; margin:0 auto;">
+<p>如果N-S界面存在势垒（例如量子点或纳米线中的不连续性），电子在靠近界面时可能发生多次反射。当一个电子在界面上被反射为空穴后，这个空穴可以再次被反射回界面，重新生成一个电子。这种电子和空穴之间的相互转换，导致了反复反射的发生。在这种电子和空穴的反复转换中，如果界面的局域条件允许形成驻波（比如由量子点的边界条件限定），电子和空穴的能量会量子化，形成一系列离散能级。
+库珀对的<strong>无耗散传输</strong>是Andreev反射和Andreev束缚态形成的关键：超导能隙限制了电子进入超导体的条件，使得低能量电子必须通过Andreev反射间接地进入超导体。当一个电子通过Andreev反射进入超导体时，它并不会在超导体中被散射损失能量，而是通过库珀对机制稳定地存在。正是这种无耗散特性，使得电子和空穴能够反复在N-S界面来回转换，而不会被衰减。电子和空穴的相干性（由超导特性保障）就像声音的共振，形成了离散的束缚态。</p>
+</div>
+<h3 id="section-6"></h3>
+<blockquote>
+<p>真奇怪啊，如果自旋是垂直于轨道的，那么这个项就很大。但是这种picture不是非常常见吗？我们又说强SOC材料是少见的</p>
+</blockquote>
+<div style="width:80%; margin:0 auto;">
+<p>你提到的确是一个有趣的矛盾表象：如果自旋垂直于轨道角动量，那么 <span
+class="math inline">\(\mathbf{L} \cdot \mathbf{S}\)</span>​
+的耦合项会很大。但我们又知道，<strong>强自旋轨道耦合（SOC）材料实际上是比较稀少的</strong>，这与直观印象似乎不太一致。自旋轨道耦合源于电子在原子核或晶格中的电场中运动时产生的有效磁场。因此，电场强度是SOC大小的核心因素：
+<span class="math display">\[
+H_{\text{SOC}} \propto \frac{1}{c^2} (\mathbf{E} \times \mathbf{v})
+\cdot \mathbf{S},
+\]</span> 在重元素中，原子核的电荷数 <span
+class="math inline">\(Z\)</span>
+很大，电子在靠近核的区域中会受到非常强的电场，因此SOC效应增强。 <span
+class="math display">\[
+H_{\text{SOC}} \sim Z^2
+\]</span>
+尽管SOC是普遍存在的现象，但强SOC材料仍然是少数，这主要与材料的结构和电子分布特点有关：</p>
+<p><strong>大多数材料的原子序数较低</strong></p>
+<p>SOC强度与原子核的电荷数 <span class="math inline">\(Z\)</span>
+呈平方关系。常见的轻元素（如硅、碳等）SOC效应相对较弱。而重元素（如铅、铋等）虽然具有强SOC，但它们的数量较少，因此整体上强SOC材料稀少。</p>
+<p><strong>晶格对SOC的调制</strong></p>
+<p>即使单个原子的SOC很强，材料的晶格结构可能会抵消SOC的部分贡献。例如：</p>
+<ul>
+<li>如果晶格具有高对称性，自旋的方向会受到严格约束，使得SOC无法完全显现。</li>
+<li>如果材料中存在反演对称性，SOC会被进一步弱化（例如中心对称晶格中通常缺乏
+Rashba 效应）。</li>
+</ul>
+<p><strong>材料中的电子分布特点</strong></p>
+<p>SOC强度还取决于电子的轨道分布。例如：</p>
+<ul>
+<li>在 <span class="math inline">\(s\)</span>-轨道中，电子的轨道角动量
+<span class="math inline">\(\mathbf{L}\)</span>
+为零，因此SOC完全消失。</li>
+<li>在 <span class="math inline">\(p\)</span>-和 <span
+class="math inline">\(d\)</span>-轨道中，电子的 <span
+class="math inline">\(\mathbf{L}\)</span>
+较大，但只有部分材料的电子分布能让 <span
+class="math inline">\(\mathbf{L} \cdot \mathbf{S}\)</span>
+达到显著值。</li>
+</ul>
+<p>你提到“自旋垂直于轨道的情况常见”确实没错，但以下原因说明这种几何关系并不总能导致强SOC：</p>
+<ol type="1">
+<li><strong>实际电子的波函数并非刚性模型</strong>：
+在原子中，电子的运动遵循量子力学波函数分布。尽管从经典图像来看，自旋和轨道可能“垂直”，但量子态的叠加和扩展效应会导致
+L⋅S L⋅S 的耦合强度远低于直观预期。</li>
+<li><strong>不同材料中SOC强度的抑制</strong>：
+在许多材料中，自旋和轨道的几何关系受到晶格对称性和电子填充的约束。例如，晶格中的对称性破缺可能使自旋轨道耦合产生相互抵消的分量。</li>
+</ol>
+<p>以下是一些以强SOC著称的材料类型，说明了SOC效应的特性：</p>
+<ul>
+<li><strong>重金属</strong>：如铋（Bi）、铅（Pb），它们的高原子序数使得SOC效应显著。</li>
+<li><strong>拓扑绝缘体</strong>：如 <span
+class="math inline">\(Bi_2Se_3\)</span>、<span
+class="math inline">\(Bi_2Te_3\)</span>，这些材料中SOC驱动了拓扑保护的表面态。</li>
+<li><strong>半导体异质结构</strong>：如 GaAs/InAs
+纳米线，SOC在这些系统中通过 Rashba 效应显现。</li>
+</ul>
+</div>
+<h3 id="section-7"></h3>
+<h4 id="补充">补充</h4>
+<h4 id="andreev束缚态"><strong>Andreev束缚态</strong></h4>
+<p>首先回顾超导系统中的 <strong>BdG 方程</strong>：</p>
+<p><span class="math display">\[\begin{pmatrix} H_0 &amp; \Delta \\
+\Delta^* &amp; -H_0^* \end{pmatrix} \begin{pmatrix} u \\ v \end{pmatrix}
+= E \begin{pmatrix} u \\ v \end{pmatrix}\]</span></p>
+<p>电子和空穴的波函数在界面处满足连续性条件，同时受到以下相位因子的调控：</p>
+<p><strong>Andreev反射的相位关系</strong>：
+当电子反射为空穴时，会产生一个相位因子 <span
+class="math inline">\(\phi_A\)</span>，其来源于超导体的库珀对凝聚态：</p>
+<p><span class="math display">\[\phi_A =
+\arccos\left(\frac{E}{\Delta}\right)\]</span></p>
+<p><strong>界面势垒的作用</strong>：
+N-S界面常被建模为一个散射势垒，导致电子和空穴在界面上分别带来额外的反射相位
+<span class="math inline">\(\phi_r\)</span> 和 <span
+class="math inline">\(\phi_h\)</span>。</p>
+<p><strong>闭合路径的条件</strong>：
+对于形成束缚态的反射路径，电子和空穴的相位积累必须满足一个<strong>量子化条件</strong>：<span
+class="math inline">\(2\phi_A + \phi_r + \phi_h = 2\pi n\)</span>。</p>
+<p><strong>ABS能量的解析解</strong></p>
+<p>在简单模型中，Andreev束缚态的能量可以通过上述量子化条件得到： <span
+class="math display">\[
+E_n = \Delta \cos\left(\frac{\phi_r + \phi_h}{2} - \frac{\pi
+n}{2}\right)
+\]</span></p>
+<p><strong>零能量特性（E = 0）的条件</strong>：</p>
+<ol type="1">
+<li>当界面势垒对称，且 <span class="math inline">\(\phi_r =
+\phi_h\)</span>，则能量可以退化为零点。</li>
+<li>特殊情况下，系统的不对称性（例如缺陷、杂质）可能导致 <span
+class="math inline">\(\phi_r + \phi_h = \pi\)</span>，此时 <span
+class="math inline">\(E = 0\)</span> 是解。</li>
+</ol>
+<p>在有限长度的一维纳米线中，电子和空穴的耦合可能进一步调整相位条件：</p>
+<ul>
+<li>如果系统足够长（无限长极限），Majorana模式和Andreev束缚态的耦合会被削弱；</li>
+<li>在有限长度系统中，电子和空穴的相位干涉更容易使ABS能量重合到零点，形成零偏置导电峰。</li>
+</ul>
+<p>此外，局域杂质的引入可能在局域形成一种类似于“伪Majorana模式”的零能态，这些状态往往是由ABS机制引起的。</p>
+<p>在隧穿实验中，Andreev束缚态的零能导电峰可以通过电导公式定量描述：
+<span class="math display">\[
+G(V) \propto \frac{\Gamma^2}{E^2 + \Gamma^2},
+\]</span> 当 <span class="math inline">\(E \to 0\)</span> 时，导电率
+<span class="math inline">\(G(V)\)</span>
+会出现明显的峰值，表现为零偏置导电峰（Zero-Bias Conductance Peak,
+ZBCP）。</p>
+<h4 id="kitaev-hamiltonian的形式"><strong>Kitaev
+Hamiltonian的形式</strong></h4>
+<p><span class="math display">\[
+H = -\mu \sum_{i} c_i^\dagger c_i -t \sum_{i} \left( c_{i}^\dagger
+c_{i+1} + c_{i+1}^\dagger c_{i} \right)
++ \Delta \sum_{i} \left( c_{i} c_{i+1} + c_{i+1}^\dagger c_{i}^\dagger
+\right)
+\]</span></p>
+<p>通过Bogoliubov变换，这个模型会转化为一个有效的超导系统。我们将费米子算符
+<span class="math inline">\(c_i\)</span> 和 <span
+class="math inline">\(c_i^\dagger\)</span> 表达为马约拉纳算符：</p>
+<p><span class="math display">\[
+c_i = \frac{1}{2} (\gamma_{i,A} + i\gamma_{i,B}), \quad c_i^\dagger =
+\frac{1}{2} (\gamma_{i,A} - i\gamma_{i,B}),
+\]</span></p>
+<p>马约拉纳算符满足对易关系：<span
+class="math inline">\(\{\gamma_{i,\alpha}, \gamma_{j,\beta}\} =
+2\delta_{ij}\delta_{\alpha\beta}\)</span>，以及自共轭条件：<span
+class="math inline">\(\gamma_{i,\alpha}^\dagger =
+\gamma_{i,\alpha}\)</span>。</p>
+<p>为了分析系统的拓扑特性，将哈密顿量转化到动量空间。采用傅里叶变换：
+<span class="math display">\[
+c_j = \frac{1}{\sqrt{N}} \sum_k c_k e^{ikj}, \quad c_j^\dagger =
+\frac{1}{\sqrt{N}} \sum_k c_k^\dagger e^{-ikj}.
+\]</span> 代入后，得到动量空间下的哈密顿量： <span
+class="math display">\[
+H = \sum_k \Psi_k^\dagger \mathcal{H}(k) \Psi_k,
+\]</span> 其中：<span class="math inline">\(\begin{pmatrix} c_k \\
+c_{-k}^\dagger \end{pmatrix}\)</span> 是Nambu自旋量；<span
+class="math inline">\(\mathcal{H}(k)\)</span> 是 BdG 哈密顿量，形式为：
+<span class="math display">\[
+\mathcal{H}(k) = \begin{pmatrix} -\mu - 2t\cos k &amp; 2i\Delta \sin k
+\\ -2i\Delta \sin k &amp; \mu + 2t\cos k \end{pmatrix}.
+\]</span> 通过对 BdG 哈密顿量对角化，得到系统的能谱： <span
+class="math display">\[
+E_k = \pm \sqrt{(\mu + 2t\cos k)^2 + (2\Delta \sin k)^2}.
+\]</span></p>
+<ul>
+<li>当 <span class="math inline">\(∣μ∣&lt;2∣t∣|\mu| &lt; 2|t|\)</span>
+时，系统具有能隙且处于拓扑非平庸相；</li>
+<li>当 <span class="math inline">\(∣μ∣&gt;2∣t∣|\mu| &gt; 2|t|\)</span>
+时，系统处于平庸相。</li>
+</ul>
+<p>通过计算拓扑不变量（如 winding
+number）来判断拓扑相位的存在性。定义拓扑不变量： <span
+class="math display">\[
+w = \frac{1}{2\pi i} \int_{-\pi}^{\pi} dk \frac{d}{dk} \ln\det Q(k),
+\]</span></p>
+<p><span class="math display">\[
+Q(k) = \mathcal{H}(k) + iE_k I.
+\]</span></p>
+<p>对于 Kitaev 链，当 <span class="math inline">\(∣μ∣&lt;2∣t∣|\mu| &lt;
+2|t|\)</span> 时，<span class="math inline">\(w =
+1\)</span>，表示系统处于拓扑非平庸相；</p>
+<p>假设链的长度为 <span
+class="math inline">\(L\)</span>，边界态的波函数呈指数衰减分布： <span
+class="math display">\[
+\psi_{\text{L}}(j) \sim e^{-j/\xi}, \quad \psi_{\text{R}}(j) \sim
+e^{-(L-j)/\xi},
+\]</span>
+在拓扑相位中，哈密顿量的解允许在链的边界处存在零能态，这些零能态是由马约拉纳算符的组合构成的。边界零模分别位于链的两端：
+<span class="math display">\[
+\gamma_{\text{L}} = \sum_j \psi_{\text{L}}(j) \gamma_{j,A}, \quad
+\gamma_{\text{R}} = \sum_j \psi_{\text{R}}(j) \gamma_{j,B}.
+\]</span> 这些零模是马约拉纳零模，彼此独立且受拓扑保护。假设链长 <span
+class="math inline">\(L\)</span>，零模的波函数可以近似为： <span
+class="math display">\[
+\gamma_{\text{L}} \sim e^{-i \theta} \sum_{n=1}^L \phi_n \gamma_{n,A},
+\quad \gamma_{\text{R}} \sim e^{i \theta} \sum_{n=1}^L \phi_n
+\gamma_{n,B},
+\]</span></p>
+<p>其中 <span class="math inline">\(\gamma_{\text{L}}\)</span> 和 <span
+class="math inline">\(\gamma_{\text{R}}\)</span>
+分别局域在左、右边界。具体来说，解出的零模波函数呈指数衰减分布，局域于链的两端。这些零模彼此独立，且不能通过局域扰动破坏，从而成为一种保护的拓扑边界态。</p>
+<p><strong>总结马约拉纳零模的来源</strong>：拓扑相位中的马约拉纳零模源自系统哈密顿量的特殊对称性（如粒子-空穴对称性）。它们是边界局域态，受保护且与拓扑不变量直接相关。在数学上，通过费米子-马约拉纳变换及拓扑分析可以严格推导零模的存在。</p>
+<p><a href="/my-article/Index0">回到索引</a></p>
+<!-- flag of hidden posts -->
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/cn/" rel="tag"># cn</a>
+          </div>
+
+        
+
+
+        
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#section"><span class="nav-number">1.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#section-1"><span class="nav-number">2.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#section-2"><span class="nav-number">3.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#section-3"><span class="nav-number">4.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#section-4"><span class="nav-number">5.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#section-5"><span class="nav-number">6.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#section-6"><span class="nav-number">7.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#section-7"><span class="nav-number">8.</span> <span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%A1%A5%E5%85%85"><span class="nav-number">8.1.</span> <span class="nav-text">补充</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#andreev%E6%9D%9F%E7%BC%9A%E6%80%81"><span class="nav-number">8.2.</span> <span class="nav-text">Andreev束缚态</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#kitaev-hamiltonian%E7%9A%84%E5%BD%A2%E5%BC%8F"><span class="nav-number">8.3.</span> <span class="nav-text">Kitaev
+Hamiltonian的形式</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">PhYsiX2020</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">PhYsiX2020</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div><script color="0,0,255" opacity="0.5" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
