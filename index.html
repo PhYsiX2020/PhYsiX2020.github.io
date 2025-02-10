@@ -159,6 +159,82 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en,zh-CN,default">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/09/cn/2025-02-05-Git-%E5%91%BD%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="PhYsiX2020">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Welcome to PhYsiX Space">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/02/09/cn/2025-02-05-Git-%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">Git 命令及其他</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2025-02-09 19:51:35 / Modified: 19:51:48" itemprop="dateCreated datePublished" datetime="2025-02-09T19:51:35-06:00">2025-02-09</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">note</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">git remote -v</span><br><span class="line">git remote add origin https://github.com/用户名/仓库.git</span><br><span class="line">git add . （git add -A 更全，包含删除文件）</span><br><span class="line">git commit -m &quot;提交信息&quot;</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
+<p>删除branch，查看提交历史，回滚</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git push origin --delete 分支名称</span><br><span class="line">git log</span><br><span class="line">git checkout 历史代码</span><br></pre></td></tr></table></figure>
+<p>断网设置本地账户</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">net user NewUser /add</span><br><span class="line">net localgroup Administrators NewUser /add</span><br><span class="line">net user defaultuser0 /delete</span><br><span class="line">net localgroup Administrators</span><br><span class="line">OOBE\BYPASSNRO</span><br><span class="line">shutdown -r -t 0</span><br></pre></td></tr></table></figure>
+<p>重新下载Microsoft store</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Get-AppxPackage -AllUsers *Microsoft.WindowsStore* | ForEach &#123; Add-AppxPackage -Register -DisableDevelopmentMode &quot;$($_.InstallLocation)\AppXManifest.xml&quot; &#125;</span><br></pre></td></tr></table></figure>
+<p>显卡工作情况，网络适配器设置</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">nvidia-smi</span><br><span class="line">ncpa.cpl</span><br><span class="line">ipconfig /all</span><br><span class="line">ping 8.8.8.8</span><br><span class="line">netsh interface ipv4 show interfaces</span><br><span class="line">Get-SmbConnection</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en,zh-CN,default">
     <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/05/cn/2025-02-05-Git%20setup/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -646,7 +722,7 @@ expression: <span class="math display">\[ \sum_{i=1}^{n} i =
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
