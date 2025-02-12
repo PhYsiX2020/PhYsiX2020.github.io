@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en,zh-CN,default">
+<html lang="en,zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 6.2.0">
+<meta name="generator" content="Hexo 6.3.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -158,8 +158,8 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en,zh-CN,default">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/09/cn/2025-02-05-Git-%E5%91%BD%E4%BB%A4/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/12/zh-CN/2025-02-12-%E5%A4%9A%E8%AF%AD%E8%A8%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -173,7 +173,115 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2025/02/09/cn/2025-02-05-Git-%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">Git 命令及其他</a>
+            <a href="/2025/02/12/zh-CN/2025-02-12-%E5%A4%9A%E8%AF%AD%E8%A8%80/" class="post-title-link" itemprop="url">多语言</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2025-02-12 12:23:24 / Modified: 12:42:08" itemprop="dateCreated datePublished" datetime="2025-02-12T12:23:24-06:00">2025-02-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">note</span></a>
+                </span>
+            </span>
+
+          
+
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-language"></i>
+  </span>
+  <a href="/2025/02/12/2025-02-12-%E5%A4%9A%E8%AF%AD%E8%A8%80/" class="lang-switch" id="lang-switch-link">
+    Switch to English
+  </a>
+</span>
+
+
+
+<script>
+    document.getElementById('lang-switch-link').addEventListener('click', function(event) {
+      event.preventDefault();
+      var targetPath = '/2025/02/12/2025-02-12-%E5%A4%9A%E8%AF%AD%E8%A8%80/';
+      fetch(targetPath)
+        .then(function(response) {
+          if (response.ok) {
+            window.location.href = targetPath;
+          } else {
+            alert('页面不存在，保持在当前页面。\nThe page does not exist. Stay on the current page.');
+          }
+        })
+        .catch(function() {
+          alert('发生错误，保持在当前页面。\nAn error occurred. Stay on the current page.');
+        });
+    });
+  </script>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>一些无关命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm update</span><br><span class="line">npm audit</span><br><span class="line">git diff package-lock.json</span><br><span class="line"></span><br><span class="line">rm -rf themes/next</span><br><span class="line">npm uninstall hexo-theme-next</span><br><span class="line"></span><br><span class="line">npm install hexo-generator-i18n --save</span><br><span class="line">npm install hexo-helper-i18n --save</span><br><span class="line">npm install hexo-renderer-nunjucks --save</span><br><span class="line">npm install moment --save</span><br></pre></td></tr></table></figure>
+<p>修改配置文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">language: [zh-CN, en]</span><br><span class="line">i18n:</span><br><span class="line">  type: [page, post]</span><br><span class="line">  generator: [archive, category, tag, index]</span><br></pre></td></tr></table></figure>
+<p>加在post.swig的metadata段落尾部</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;%- if post.lang %&#125;</span><br><span class="line">    &#123;%- set targetLang = &#x27;zh-CN&#x27; if post.lang == &#x27;en&#x27; else &#x27;en&#x27; %&#125;</span><br><span class="line">&#123;%- set targetSlug = post.slug %&#125;</span><br><span class="line">&#123;% set targetPath = post.path | replace(post.slug, &#x27;zh-CN/&#x27; + post.slug) if post.lang == &#x27;en&#x27; else post.path | replace(&#x27;zh-CN/&#x27;, &#x27;/&#x27;) %&#125;</span><br></pre></td></tr></table></figure>
+<p>一些错误命令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;%- if post.lang %&#125;</span><br><span class="line">    &#123;%- set targetLang = &#x27;zh-CN&#x27; if post.lang == &#x27;en&#x27; else &#x27;en&#x27; %&#125;</span><br><span class="line">    &#123;% set i18nPost = site.posts.findOne(&#123;lang: targetLang, title: post.title&#125;) %&#125;</span><br><span class="line">    &#123;%- if i18nPost %&#125;</span><br><span class="line">      &lt;span class=&quot;post-meta-item&quot;&gt;</span><br><span class="line">        &lt;span class=&quot;post-meta-item-icon&quot;&gt;</span><br><span class="line">          &lt;i class=&quot;fas fa-language&quot;&gt;&lt;/i&gt;</span><br><span class="line">        &lt;/span&gt;</span><br><span class="line">        &lt;a href=&quot;&#123;&#123; url_for(i18nPost.path) &#125;&#125;&quot; class=&quot;lang-switch&quot;&gt;</span><br><span class="line">          &#123;&#123; &#x27;Switch to English&#x27; if post.lang == &#x27;zh-CN&#x27; else &#x27;切换到中文&#x27; &#125;&#125;</span><br><span class="line">        &lt;/a&gt;</span><br><span class="line">      &lt;/span&gt;</span><br><span class="line">    &#123;%- endif %&#125;</span><br><span class="line">  &#123;%- endif %&#125;</span><br><span class="line">  </span><br><span class="line">&#123;%- set currentUrl = page.url %&#125;</span><br><span class="line">&#123;%- set targetUrl = currentUrl | replace(&quot;/&quot; + post.lang + &quot;/&quot;, &quot;/&quot; + targetLang + &quot;/&quot;) %&#125;</span><br><span class="line">&#123;%- set targetPath = url_for(&#x27;/&#x27; + targetLang + &#x27;/&#x27; + page.date.year + &#x27;/&#x27; + page.date.month + &#x27;/&#x27; + page.date.day + &#x27;/&#x27; + targetSlug + &#x27;/&#x27;) %&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>不存在页面</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">document.getElementById(&#x27;lang-switch-link&#x27;).addEventListener(&#x27;click&#x27;, function(event) &#123;</span><br><span class="line">      event.preventDefault();</span><br><span class="line">      var targetPath = &#x27;&#123;&#123; url_for(targetPath) &#125;&#125;&#x27;;</span><br><span class="line">      fetch(targetPath)</span><br><span class="line">        .then(function(response) &#123;</span><br><span class="line">          if (response.ok) &#123;</span><br><span class="line">            window.location.href = targetPath;</span><br><span class="line">          &#125; else &#123;</span><br><span class="line">            alert(&#x27;页面不存在，保持在当前页面&#x27;);</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">        .catch(function() &#123;</span><br><span class="line">          alert(&#x27;发生错误，保持在当前页面&#x27;);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en,zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/09/zh-CN/2025-02-05-Git-%E5%91%BD%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="PhYsiX2020">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Welcome to PhYsiX Space">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/02/09/zh-CN/2025-02-05-Git-%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">Git 命令及其他</a>
         </h2>
 
         <div class="post-meta">
@@ -234,8 +342,8 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en,zh-CN,default">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/05/cn/2025-02-05-Git%20setup/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en,zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/05/zh-CN/2025-02-05-Git%20setup/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -249,7 +357,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2025/02/05/cn/2025-02-05-Git%20setup/" class="post-title-link" itemprop="url">Git setup</a>
+            <a href="/2025/02/05/zh-CN/2025-02-05-Git%20setup/" class="post-title-link" itemprop="url">Git setup</a>
         </h2>
 
         <div class="post-meta">
@@ -319,8 +427,8 @@ hexo，<code>npm install -g hexo-cli</code></p>
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en,zh-CN,default">
-    <link itemprop="mainEntityOfPage" href="http://example.com/my-article/Index0/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en,zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/10/zh-CN/%E6%81%A2%E5%A4%8D%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%8A%9E%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -334,88 +442,7 @@ hexo，<code>npm install -g hexo-cli</code></p>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/my-article/Index0/" class="post-title-link" itemprop="url">Index0</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2025-01-24 00:00:00" itemprop="dateCreated datePublished" datetime="2025-01-24T00:00:00-06:00">2025-01-24</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2025-02-05 02:14:26" itemprop="dateModified" datetime="2025-02-05T02:14:26-06:00">2025-02-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/index/" itemprop="url" rel="index"><span itemprop="name">index</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          Here's something encrypted, password is required to continue reading.
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/my-article/Index0/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en,zh-CN,default">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/10/cn/%E6%81%A2%E5%A4%8D%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%8A%9E%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="PhYsiX2020">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Welcome to PhYsiX Space">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/07/10/cn/%E6%81%A2%E5%A4%8D%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%8A%9E%E6%B3%95/" class="post-title-link" itemprop="url">基于Hexo使用NexT主题的博客恢复以及启用mathjax的办法</a>
+            <a href="/2023/07/10/zh-CN/%E6%81%A2%E5%A4%8D%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%8A%9E%E6%B3%95/" class="post-title-link" itemprop="url">基于Hexo使用NexT主题的博客恢复以及启用mathjax的办法</a>
         </h2>
 
         <div class="post-meta">
@@ -495,8 +522,8 @@ expression: <span class="math display">\[ \sum_{i=1}^{n} i =
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en,zh-CN,default">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/27/cn/%E9%87%8F%E5%AD%90%E6%B5%8B%E9%87%8F%E7%AC%94%E8%AE%B0/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en,zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/02/12/zh-CN/2025-02-12-pdf/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -510,7 +537,88 @@ expression: <span class="math display">\[ \sum_{i=1}^{n} i =
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/05/27/cn/%E9%87%8F%E5%AD%90%E6%B5%8B%E9%87%8F%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">量子测量笔记</a>
+            <a href="/2023/02/12/zh-CN/2025-02-12-pdf/" class="post-title-link" itemprop="url">QST</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2023-02-12 03:13:28" itemprop="dateCreated datePublished" datetime="2023-02-12T03:13:28-06:00">2023-02-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2025-02-12 12:09:10" itemprop="dateModified" datetime="2025-02-12T12:09:10-06:00">2025-02-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/file/" itemprop="url" rel="index"><span itemprop="name">file</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          Here's something encrypted, password is required to continue reading.
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/02/12/zh-CN/2025-02-12-pdf/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en,zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/27/zh-CN/%E9%87%8F%E5%AD%90%E6%B5%8B%E9%87%8F%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="PhYsiX2020">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Welcome to PhYsiX Space">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/05/27/zh-CN/%E9%87%8F%E5%AD%90%E6%B5%8B%E9%87%8F%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">量子测量笔记</a>
         </h2>
 
         <div class="post-meta">
@@ -553,7 +661,7 @@ expression: <span class="math display">\[ \sum_{i=1}^{n} i =
           <p><em>来源：课程讲义</em></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2022/05/27/cn/%E9%87%8F%E5%AD%90%E6%B5%8B%E9%87%8F%E7%AC%94%E8%AE%B0/#more" rel="contents">
+              <a class="btn" href="/2022/05/27/zh-CN/%E9%87%8F%E5%AD%90%E6%B5%8B%E9%87%8F%E7%AC%94%E8%AE%B0/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -639,7 +747,7 @@ expression: <span class="math display">\[ \sum_{i=1}^{n} i =
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -648,12 +756,6 @@ expression: <span class="math display">\[ \sum_{i=1}^{n} i =
           
         <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">categories</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
 </div>
@@ -751,6 +853,26 @@ expression: <span class="math display">\[ \sum_{i=1}^{n} i =
 
 
 
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
 
 
 

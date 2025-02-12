@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en,zh-CN,default">
+<html lang="en,zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 6.2.0">
+<meta name="generator" content="Hexo 6.3.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -177,6 +177,26 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
+              datetime="2025-02-12T12:23:24-06:00"
+              content="2025-02-12">
+          02-12
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/2025/02/12/zh-CN/2025-02-12-%E5%A4%9A%E8%AF%AD%E8%A8%80/" itemprop="url">
+            <span itemprop="name">多语言</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
               datetime="2025-02-09T19:51:35-06:00"
               content="2025-02-09">
           02-09
@@ -184,7 +204,7 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2025/02/09/cn/2025-02-05-Git-%E5%91%BD%E4%BB%A4/" itemprop="url">
+          <a class="post-title-link" href="/2025/02/09/zh-CN/2025-02-05-Git-%E5%91%BD%E4%BB%A4/" itemprop="url">
             <span itemprop="name">Git 命令及其他</span>
           </a>
       </div>
@@ -204,7 +224,7 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2025/02/05/cn/2025-02-05-Git%20setup/" itemprop="url">
+          <a class="post-title-link" href="/2025/02/05/zh-CN/2025-02-05-Git%20setup/" itemprop="url">
             <span itemprop="name">Git setup</span>
           </a>
       </div>
@@ -227,7 +247,7 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2023/07/10/cn/%E6%81%A2%E5%A4%8D%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%8A%9E%E6%B3%95/" itemprop="url">
+          <a class="post-title-link" href="/2023/07/10/zh-CN/%E6%81%A2%E5%A4%8D%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%8A%9E%E6%B3%95/" itemprop="url">
             <span itemprop="name">基于Hexo使用NexT主题的博客恢复以及启用mathjax的办法</span>
           </a>
       </div>
@@ -250,7 +270,7 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2022/05/27/cn/%E9%87%8F%E5%AD%90%E6%B5%8B%E9%87%8F%E7%AC%94%E8%AE%B0/" itemprop="url">
+          <a class="post-title-link" href="/2022/05/27/zh-CN/%E9%87%8F%E5%AD%90%E6%B5%8B%E9%87%8F%E7%AC%94%E8%AE%B0/" itemprop="url">
             <span itemprop="name">量子测量笔记</span>
           </a>
       </div>
@@ -329,7 +349,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -338,12 +358,6 @@
           
         <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">categories</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
 </div>
@@ -441,6 +455,26 @@
 
 
 
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
 
 
 
