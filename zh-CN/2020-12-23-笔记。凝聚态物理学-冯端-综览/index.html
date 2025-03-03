@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en,zh-CN,default">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="还原论的重要性 认识到微观结构从而理解宏观表现">
+<meta property="og:type" content="article">
+<meta property="og:title" content="凝聚态物理学 冯端 综览">
+<meta property="og:url" content="http://example.com/zh-CN/2020-12-23-%E7%AC%94%E8%AE%B0%E3%80%82%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E5%AD%A6-%E5%86%AF%E7%AB%AF-%E7%BB%BC%E8%A7%88/index.html">
+<meta property="og:site_name" content="Welcome to PhYsiX Space">
+<meta property="og:description" content="还原论的重要性 认识到微观结构从而理解宏观表现">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-12-24T02:06:39.000Z">
+<meta property="article:modified_time" content="2025-03-03T05:11:46.575Z">
+<meta property="article:author" content="PhYsiX2020">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/zh-CN/2020-12-23-%E7%AC%94%E8%AE%B0%E3%80%82%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E5%AD%A6-%E5%86%AF%E7%AB%AF-%E7%BB%BC%E8%A7%88/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>凝聚态物理学 冯端 综览 | Welcome to PhYsiX Space</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Welcome to PhYsiX Space</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Try to set up a place to store notes</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/zh-CN/2020-12-23-%E7%AC%94%E8%AE%B0%E3%80%82%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E5%AD%A6-%E5%86%AF%E7%AB%AF-%E7%BB%BC%E8%A7%88/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="PhYsiX2020">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Welcome to PhYsiX Space">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          凝聚态物理学 冯端 综览
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-12-23 20:06:39" itemprop="dateCreated datePublished" datetime="2020-12-23T20:06:39-06:00">2020-12-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-03-02 23:11:46" itemprop="dateModified" datetime="2025-03-02T23:11:46-06:00">2025-03-02</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/note/" itemprop="url" rel="index"><span itemprop="name">note</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+
+
+<span class="post-meta-item">
+  <span class="post-meta-item-icon">
+    <i class="fas fa-language"></i>
+  </span>
+  <a href="/en/2020-12-23-%E7%AC%94%E8%AE%B0%E3%80%82%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E5%AD%A6-%E5%86%AF%E7%AB%AF-%E7%BB%BC%E8%A7%88/" class="lang-switch" id="lang-switch-link">
+    Switch to English
+  </a>
+</span>
+
+
+
+<script>
+    document.getElementById('lang-switch-link').addEventListener('click', function(event) {
+      event.preventDefault();
+      var targetPath = '/en/2020-12-23-%E7%AC%94%E8%AE%B0%E3%80%82%E5%87%9D%E8%81%9A%E6%80%81%E7%89%A9%E7%90%86%E5%AD%A6-%E5%86%AF%E7%AB%AF-%E7%BB%BC%E8%A7%88/';
+      fetch(targetPath)
+        .then(function(response) {
+          if (response.ok) {
+            window.location.href = targetPath;
+          } else {
+            alert('页面不存在，保持在当前页面。\nThe page does not exist. Stay on the current page.');
+          }
+        })
+        .catch(function() {
+          alert('发生错误，保持在当前页面。\nAn error occurred. Stay on the current page.');
+        });
+    });
+  </script>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><font size=3></p>
+<p>还原论的重要性 认识到微观结构从而理解宏观表现</p>
+<span id="more"></span>
+<p style="white-space: pre-line;">
+复杂还原简单 简单构建复杂层次间的耦合与脱耦 脱耦：临界现象
+重整化群理论——&gt;忽略掉种种微观效应的影响（能量远大于某截止值）
+层展现象（emergent phenomena） 规范对称性（波函数相位的任意性）破缺
+</p>
+<div>
+热平衡态粒子：<span class="math inline">\(v\sim\sqrt T\)</span>，热de
+Brogile波长与温度平方根成反比
+</div>
+<div>
+波长与粒子间距相当时——&gt;量子效应明显
+</div>
+<div>
+<span class="math inline">\(\frac{3}{2}kT=\frac{1}{2}mv^2\)</span>,
+<span class="math inline">\(\lambda=h/p\)</span>. 估算量子简并温度
+</div>
+<div>
+电子简并温度~<span class="math inline">\(10^5 K\)</span>, 总是呈现波动性
+</div>
+<div>
+离子或原子，<span class="math inline">\(\frac{50}{A}
+K\)</span>，低温下呈现
+</div>
+<p>
+<pre style="background: none;">
+凝聚现象的本质在于相空间的分厢化（$compartmentalization$）
+位形空间：体现于自由表面的出现
+动量空间：动量空间的凝聚现象
+$Boson$: BEC: 降温达到某一临界温度时，宏观数量的粒子将占有基态
+$Fermion$: Fermi球 动量空间的广义凝聚体 不存在确切的临界温度
+若Fermion存在某种相互吸引的作用，将配对成为boson再凝聚为宏观量子态
+（金属超导体与He3超流体）
+</pre>
+</p>
+<p>不同物相 内能与熵竞争的结果<br> 位置序 不同处原子位置存在关联<br>
+T&lt;T0 重要的是动量空间的序（动量序，波序）</p>
+<p>根源通常在于相互作用。然而在无相互作用如理想气体，也可能出现完全有序。相互作用减小波序<br>
+例如Bosen存在相互作用导致BEC温度降低<br>
+绝热条件下将相互作用引入，fermi气体变fermi液体，波序略减小，但仍保留明锐的fermi面<br>
+以及与Fermi气体对应的元激发。进一步增强相互作用，向强关联fermi系统演变，呈现反常行为</p>
+<p>经典系统中提高密度可能使相互作用增强，量子系统则可能不同<br>
+例如电子系统中，电子密度的降低反而造成相互作用的增强，强关联电子系统往往是低密度电子系统</p>
+<p>由于Heisenberg不确定原理，量子力学中位置与动量不确定性联系在一起<br>
+因此可以想见，量子力学中的位置序与动量序会出现不相容情况<br>
+例如晶态固体中不会出现BEC凝聚，Wigner晶体是以牺牲Fermi面为代价的<br>
+流体动力学中速度场的关联性——&gt;比拟为动量空间存在有序<br>
+自旋粒子系统的有序化现象<br>
+如果自旋都局限在格座上，体现于无序自旋态（顺磁体）通过交换相互作用转化为有序自旋态(铁磁体)<br>
+巡游电子的自旋 动量有序化的量子描述<br> 自旋有序相 自旋极化
+具有相互作用的自旋fermi子可能配对<br> 位形空间Schafroth对
+动量空间Cooper对<br></p>
+<p>凝聚态物质是相空间的凝聚体，包括位形空间和动量空间，具有丰富内涵<br>尽管引起相变的相互作用本质上是量子性的，但相变的出现是经典涨落导致的<br>
+另一种，量子相变。0
+K，热涨落荡然无存，相变通过Heisenberg不确定关系要求的量子涨落实现<br>
+与热力学相变判然有别。可通过实验结果外推证实</p>
+<p>范式（paradigm）<br> 周期结构中波的传播<br> 平移对称性引入的简化<br>
+推广和修正<br> 非周期，强无序和定域化，Mott对其的物理诠释<br>
+准周期结构。另一种无序结构：非均匀结构。逾渗理论。标度不变性的分形结构<br>
+表面。低维物理。<br>
+涨落会摧毁一维及二维结构中的长程周期结构，但由于存在耦合和有限尺寸，周期结构可稳定存在<br>
+无序效应在低维特别显著<br>
+定域化的标度理论表明，在一维和二维结构中电子是定域化的<br>
+对非周期及非三维结构的研究成为原始范式的重要推广，成为活跃领域<br>
+另一活跃领域是对de Brogile波的相干效应有关的<br>
+Anderson定域化和电子的弱定域化本质在于波的干涉效应—&gt;介观物理<br>
+自旋纳入范式。自旋极化的电子可以和格波以及缺陷产生自旋相关散射<br></p>
+<p>简化模型，单电子近似的能带理论<br>
+能带理论提出同时出现了基于量子力学的氢分子的理论处理<br>
+二者虽然相似但有差异。虽然都是单电子近似<br>
+早先Heitler与London在对氢分子的价键理论研究中已经约略地考虑了电子在位的关联性<br>
+随后推广成Heisenberg处理定域自旋的铁磁性理论基础<br>
+后来Pauli引入杂化轨道理论，采用更加直观且定域化的价键轨道<br>
+化学家强调定域化（原子轨道形状，化学键的形成，电荷转移）<br>
+物理学家强调离域化的价电子以及在波矢空间中的色散关系<br>
+各有优劣。能带理论是处理输运问题最成功的理论，但处理键合问题不如量子化学<br>
+量子化学将各个原子的贡献叠加难以推广到更多原子</p>
+<p>单电子近似的修正。引入表征电子间相互作用的关联项<br>
+密度泛函理论。局域密度近似。从头起（ab initio）计算的标准方法<br>
+20世纪70年代起，介乎分子和大块固体间的纳米结构特别是量子阱，线，点，超晶格等受到广泛关注<br>
+许多性质恰好介乎分子和晶体之间<br> 能带理论的不足之处呈现出来<br>
+Wigner从理论上考虑：自由电子浓度减小时，电子动能相对于Coulomb能比重下降<br>
+设想电子密度稀薄到一定程度，Coulomb能将占主导地位，<br>使得电子分布在空间有序的晶格座位上，形成Wigner晶体<br>
+像NiO，CoO，MnO等过渡金属氧化物，一个晶胞中奇数个价电子，能带理论预言为导体，实际绝缘<br>
+Peierls和Mott认为问题在于电子间的相互作用引起的关联效应。Mott绝缘体<br>
+在位关联能可以阻止可移动组态的形成。用在位关联能区分导体和绝缘体，更化学的角度<br>
+Hubbard将这一要领和能带理论结合起来形成Hubbard模型处理Mott转变（电子关联形成的金属绝缘体转变）<br>
+20世纪50年代Anderson表述了反铁磁性和亚铁磁性氧化物中超交换作用的理论<br>
+其中在位关联能也起重要作用<br>
+与此同时Zener发展了双交换作用来解释若干钙锰氧化物的铁磁金属态<br>
+到90年代。这些氧化物中明确了不仅存在自旋有序化，还可能存在轨道、电荷有序化<br>
+各种有序化可能耦合在一起。氧化物中轨道物理学发展。庞磁电阻。<br>
+正常非磁性金属内磁性杂志效应研究发现有趣效应。例如电阻与磁性的异常。<br>
+这显然和s&amp;d(或f)电子间的混杂与相互作用有关<br>
+Anderson在他的理论中考虑到在位关联能提出一个简化模型，即Anderson模型<br>
+Anderson Hamilton量可以转化为Kondo Hamilton量。解释近藤效应<br>
+Anderson模型可推广为周期Anderson模型，正如近藤模型可推广为近藤晶格模型<br>
+1986年后一系列高温超导体被发现。它们的原型相几乎是Mott绝缘体，而超导相是掺杂的Mott绝缘体<br>
+具有庞磁电阻的锰氧化物情况颇为相似<br>
+因此人们预期电子间的强关联将在正常态电阻的反常行为和超导配对机制方面起关键作用<br></p>
+<p>合作现象譬如相变是多粒子物理学的重要内容<br>
+Heisenberg铁磁理论和BCS超导理论成为合作现象量子理论的高峰<br>
+反铁磁性，<span class="math inline">\(He_{3}
+He_{4}\)</span>超流性，对称破缺的有序相<br>
+一般处理多粒子问题存在困难——&gt;平均场近似<br>
+普适的Landau唯象二级相变理论<br> 对有序相激发态的研究<br>
+Debye声子理论给出元激发的初浅概念，Bloch引入自旋波或磁振子的概念，Bohm与Pines的等离激元理论，Landau的Fermi液体理论都标志着多粒子问题理论的重大进展<br>
+位错理论，解释金属为何容易发生范性形变<br>
+同时Landau和Lifshitz提出铁磁体的磁畴理论<br>
+……缺陷拓扑的分类方案，首次给予缺陷以统一性的理论处理<br>
+拓扑缺陷被认为是有序介质中的奇异性场所，而其拓扑稳定性则仅与介质的空间维数及序参量分量数有关，体现了普适性<br>
+Landau理论在临界区域失效，能够处理强烈而长程涨落的近代临界现象理论应运而生<br>
+70年代以后，这些关于合作现象的概念被P.G. de Gennes，S.F.
+Edwards等用来开拓新领域<br>
+诸如液晶物理学，聚合物物理学等软物质类物理学</p>
+<p></font></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/zh-CN/2020-12-23-%E7%BB%9F%E8%AE%A1%E7%89%A9%E7%90%86%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3/" rel="next" title="统计物理的基本思想">
+      统计物理的基本思想 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">PhYsiX2020</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">PhYsiX2020</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div><script color="0,0,255" opacity="0.5" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<script>
+document.querySelectorAll('.pdfobject-container').forEach(element => {
+  let url = element.dataset.target;
+  let pdfOpenParams = {
+    navpanes : 0,
+    toolbar  : 0,
+    statusbar: 0,
+    pagemode : 'thumbs',
+    view     : 'FitH'
+  };
+  let pdfOpenFragment = '#' + Object.entries(pdfOpenParams).map(([key, value]) => `${key}=${encodeURIComponent(value)}`).join('&');
+  let fullURL = `/lib/pdf/web/viewer.html?file=${encodeURIComponent(url)}${pdfOpenFragment}`;
+
+  if (NexT.utils.supportsPDFs()) {
+    element.innerHTML = `<embed class="pdfobject" src="${url + pdfOpenFragment}" type="application/pdf" style="height: ${element.dataset.height};">`;
+  } else {
+    element.innerHTML = `<iframe src="${fullURL}" style="height: ${element.dataset.height};" frameborder="0"></iframe>`;
+  }
+});
+</script>
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
